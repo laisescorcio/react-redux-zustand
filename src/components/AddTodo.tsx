@@ -15,6 +15,8 @@ export function AddTodo() {
         newTodo,
       })
     );
+
+    setNewTodo("");
   }
 
   return (
