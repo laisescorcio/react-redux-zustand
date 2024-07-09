@@ -6,10 +6,10 @@ Run
 `npm install`
 `npm run dev`
 
-## Redux
+## Redux Flow
 
-- Create a store
-- Separete the store in slices - reducer (reduxjs/toolkit)
-- Create actions
-- Use useSelector to search the states
-- Use useDispatch to change the states
+- The store is created
+- In the store is created separetes slices containing the respectives states - store reducer
+- Actions are created (functions to modify the states)
+- Dispatch is used to call the actions to modify the respectives states
+- useSelector is used to search the states to render on interface
