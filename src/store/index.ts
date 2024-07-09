@@ -5,7 +5,13 @@ const  todoSlice = createSlice({
     name: 'todo',
     initialState: ['Fazer café', 'Estudar Redux', 'Estudar Zustand'],
 
-    reducers: {},
+    reducers: {
+        // actions, ou seja, funções que mudarão o estado
+        add: (state, action) => {
+            // insere o newTodo na lista de todo
+            state.push(action.payload.newTodo)
+        }
+    },
 })
 
 export const store = configureStore({
@@ -14,3 +20,6 @@ export const store = configureStore({
         todo: todoSlice.reducer,
     }
 })
+
+// para exportar as actions (reducers)
+export const { add } = todoSlice.actions

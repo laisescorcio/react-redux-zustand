@@ -10,8 +10,8 @@ export function TodoList() {
   console.log(todos);
   return (
     <ul>
-      {todos.map((todo) => (
-        <li key={todo}>{todo}</li>
+      {todos.map((todo, index) => (
+        <li key={index}>{todo}</li>
       ))}
     </ul>
   );
